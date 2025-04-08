@@ -14,7 +14,7 @@ router.register(r"categorias", CategoriaViewSet, basename='categorias')
 router.register(r'usuarios', UserViewSet, basename='usuarios')
 router.register(r'editoras', EditoraViewSet, basename='editoras')
 router.register(r'autor', AutorViewSet, basename='autor')
-router.register(r'autor', LivroViewSet, basename='livro')
+router.register(r'livro', LivroViewSet, basename='livro')
 
 
 urlpatterns = [
