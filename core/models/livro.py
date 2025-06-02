@@ -16,4 +16,4 @@ class Livro(models.Model):
     capa = models.ForeignKey(Image, related_name="+", on_delete=models.SET_NULL, null=True, blank=True, default=None,)
 
     def __str__(self):
-        return f"({self.id}) {self.titulo} ({self.quantidade})"
+        return f"({self.id}) {self.titulo} - {self.quantidade}"

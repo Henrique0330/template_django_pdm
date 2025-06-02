@@ -6,4 +6,4 @@ class Editora(models.Model):
     site = models.URLField(max_length=200, blank=True, null=True)
 
     def __str__(self):
-        return f"({self.nome}) {self.site}"
+        return f" {self.nome} - {self.site}"
